@@ -1,7 +1,7 @@
 import os
 
-import pandas as pd
-from scipy.sparse import csr_matrix
+import pandas as pd # type: ignore
+from scipy.sparse import csr_matrix # type: ignore
 
 from data_loader import load_all
 from encoder import encode

@@ -1,9 +1,9 @@
 import os
 
-import joblib
-import numpy as np
-import pandas as pd
-from scipy.sparse import csr_matrix
+import joblib # pyright: ignore[reportMissingImports]
+import numpy as np # pyright: ignore[reportMissingImports]
+import pandas as pd # pyright: ignore[reportMissingModuleSource, reportMissingImports]
+from scipy.sparse import csr_matrix # pyright: ignore[reportMissingImports]
 
 PROCESSED_DIR = "data/processed"
 MATRIX_PATH = os.path.join(PROCESSED_DIR, "interaction_matrix.joblib")
@@ -46,10 +46,10 @@ def _log_matrix_stats(matrix: csr_matrix) -> None:
     print(f"Sparsity : {sparsity:.4%}")
 
     ratings_per_user = np.diff(matrix.indptr)
-    print(f"Ratings per user  — mean: {ratings_per_user.mean():.1f}  min: {ratings_per_user.min()}  max: {ratings_per_user.max()}")
+    print(f"Ratings per user  - mean: {ratings_per_user.mean():.1f}  min: {ratings_per_user.min()}  max: {ratings_per_user.max()}")
 
     ratings_per_movie = np.diff(matrix.tocsc().indptr)
-    print(f"Ratings per movie — mean: {ratings_per_movie.mean():.1f}  min: {ratings_per_movie.min()}  max: {ratings_per_movie.max()}")
+    print(f"Ratings per movie - mean: {ratings_per_movie.mean():.1f}  min: {ratings_per_movie.min()}  max: {ratings_per_movie.max()}")
 
 
 def save_matrix(matrix: csr_matrix) -> None:
