@@ -1,7 +1,6 @@
 import os
 
-import pandas as pd
-import joblib
+import pandas as pd # type: ignore
 
 PROCESSED_DIR = "data/processed"
 
