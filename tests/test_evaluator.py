@@ -5,7 +5,7 @@ from scipy.sparse import csr_matrix
 
 
 from src.evaluator import _rmse, evaluate_user_based_cf, evaluate_mf_sgd, evaluate_mf_svd, evaluate_all
-from src.cf_model import UserBasedCF, ItemBasedCF
+from models.cf_model import UserBasedCF, ItemBasedCF
 from src.mf_scratch import MatrixFactorizationSGD
 from src.mf_svd import MatrixFactorizationSVD
 

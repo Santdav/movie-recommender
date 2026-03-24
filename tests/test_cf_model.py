@@ -3,7 +3,7 @@ import numpy as np
 from scipy.sparse import csr_matrix
 
 
-from src.cf_model import UserBasedCF, ItemBasedCF
+from models.cf_model import UserBasedCF, ItemBasedCF
 
 
 # ─── Fixtures ────────────────────────────────────────────────────────────────

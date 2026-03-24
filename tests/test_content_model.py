@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 
-from src.content_model import ContentModel
+from models.content_model import ContentModel
 
 
 # ─── Fixtures ────────────────────────────────────────────────────────────────
