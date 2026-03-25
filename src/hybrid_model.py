@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from scipy.sparse import csr_matrix
 
-from models.content_model import ContentModel
+from content_model import ContentModel
 
 
 class HybridModel:
